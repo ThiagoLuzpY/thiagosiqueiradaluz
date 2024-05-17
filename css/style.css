@@ -1,0 +1,118 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover; /* Cobrir toda a página */
+    opacity: 0.7; /* Transparência aplicada ao fundo */
+}
+
+header {
+    background: linear-gradient(to bottom, #004d99, #00ced1); /* Gradiente de azul escuro para azul turquesa */
+    color: white;
+    padding: 10px 20px;
+    text-align: center; /* Certifica que o texto fique centralizado */
+    display: flex;
+    justify-content: space-between; /* Ajusta os elementos do cabeçalho */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+header img {
+    height: 60px;
+    width: auto; /* Manter a proporção da imagem */
+    margin-right: 20px; /* Espaçamento após a imagem */
+}
+
+header h1 {
+    flex: 1; /* Faz o h1 ocupar todo o espaço disponível, mantendo-o centralizado */
+    text-align: center; /* Certifica que o texto fique centralizado horizontalmente */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; /* Espalha os links mais uniformemente */
+    margin-top: 50px;
+}
+
+nav a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white;
+    background: linear-gradient(to bottom, #004d99, #00ced1); /* Gradiente de azul escuro para azul turquesa */
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px; /* Arredonda as bordas dos links */
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+}
+
+nav a:hover {
+    background-color: #005c99; /* Muda a cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do link */
+}
+
+/* Estilos específicos da página de contato */
+.content {
+    padding: 20px;
+    line-height: 1.6;
+    max-width: 100%; /* Ajusta a largura máxima */
+    margin-left: 0; /* Alinha o início do conteúdo à esquerda */
+    margin-right: auto; /* Garante expansão para a direita */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os items à esquerda */
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea, button.submit-button {
+    width: 100%; /* Ajuste para ocupar a largura total do container */
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px; /* Ajustado para mais altura */
+}
+
+.info-container, .message-container {
+    width: 100%; /* Ajuste para até 100% sem problema */
+    max-width: 960px; /* Limita a largura máxima */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-text {
+    font-size: small;
+    text-align: center;
+    margin-top: 10px;
+}
+.submit-button {
+    display: block;
+    width: 100%; /* Ajuste para ocupar a largura total do container */
+    padding: 10px 0;
+    background: linear-gradient(to bottom, #004d99, #00ced1); /* Gradiente de azul escuro para azul turquesa */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px; /* Espaçamento após o botão */
+}
+
+.submit-button:hover {
+    background-color: #005c99; /* Muda a cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+}
