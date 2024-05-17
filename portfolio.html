@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .portfolio-container {
+            width: 90%;
+            margin: 20px auto 0;
+            background-color: #f2f2f2;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; /* Garante que a imagem e o link não se sobreponham */
+            align-items: center; /* Centraliza verticalmente o conteúdo dentro do contêiner */
+        }
+        .portfolio-image {
+            width: 60%;
+            transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+            cursor: pointer;
+        }
+        .portfolio-link {
+            width: 60%; /* Ocupa o espaço restante ao lado da imagem */
+            text-align: center;
+            color: #0073e6;
+            font-size: 20px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px; /* Define uma altura para facilitar o alinhamento */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfólio</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre_mim.html">Sobre Mim</a>
+        <a href="formacao.html">Formação</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <div class="portfolio-container">
+        <p>A página ao lado, que ainda está em desenvolvimeno, foi criada por mim após em Django Python com o auxílio do curso do Henrique Bastas que hoje é gratuito no canal dele no Youtube. É uma site criado para uma conferência que irá ocorrer com diversos desenvovledores como forma de divulgação do evento e inscrição para o mesmo. Não poderei exibir outros trabalhos desenvolvidos devido à relação de sigilo com o cliente mas em breve o trabalho ao lado será finalizado. Voltem em breve para ver a conclusão!</p>
+        <img src="images/eventex.PNG" alt="Eventex" class="portfolio-image">
+        <div class="portfolio-link">
+            <a href="https://thiagoluz.pythonanywhere.com/" target="_blank" class="portfolio-link">Visite meu Portfólio</a>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.portfolio-image').addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.1)';
+        });
+        document.querySelector('.portfolio-image').addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1.0)';
+        });
+        document.querySelector('.portfolio-link a').addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.1)';
+            this.style.color = '#ff4500';
+        });
+        document.querySelector('.portfolio-link a').addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1.0)';
+            this.style.color = '#0073e6';
+        });
+    </script>
+</body>
+</html>

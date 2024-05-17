@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .home-container {
+            background-color: #f9f9f9; /* Cor de fundo próxima do branco */
+            border: 1px solid #e0e0e0; /* Borda sutil cinza */
+            padding: 50px; /* Aumentado para dar mais espaço */
+            margin: 50px auto;
+            width: 90%; /* O texto ocupa 90% da página na horizontal */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombreado sutil no contorno */
+            position: relative;
+            min-height: 520px; /* Define uma altura mínima para o contêiner */
+        }
+        .video-wrapper {
+            width: 30%;
+            padding-top: 3.75%;
+            height: 0;
+            margin: 20px auto 0 auto; /* Centraliza o vídeo e dá espaço acima */
+            position: relative;
+            opacity: 0; /* Inicia o vídeo escondido para o efeito de fade-in */
+            animation: fadeIn 5s forwards; /* Efeito de fade-in */
+        }
+        h2 {
+            text-align: center; /* Alinha o texto acima do vídeo ao centro */
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* Transição para o vídeo visível */
+            }
+        }
+    </style>  
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Meu Site!</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre_mim.html">Sobre Mim</a>
+        <a href="formacao.html">Formação</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <div class="home-container">
+        <h2>Entenda o que você vai encontrar nesse site junto comigo nesse vídeo.</h2>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/1BnFebfFyT8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 300px;"></iframe>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
